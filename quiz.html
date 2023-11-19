@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Dawid Mularczyk" />
+    <meta name="Description" content="Strona poświęcona piłce ręcznej" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/ikonka.png" type="image/png">
+    <link rel="stylesheet" href="styles_quiz.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="change_title.js"></script>
+    <script defer src="script_quiz.js"></script>
+    <title>piłka ręczna w moim życiu</title>
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <a href="index.html"><h1>Dawid Mularczyk</h1></a>
+        <a href="index.html"><p>Moje najważniejsze hobby</p></a>
+    </div>
+    <nav class="header-right">
+        <a href="index.html"><i class="material-icons">home</i></a>
+    </nav>
+</header>
+<main>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 class="header-txt">Quiz o piłce ręcznej</h2>
+        </div>
+        <div class="quiz-body">
+            <h2 id="question"></h2>
+            <ul>
+                <li class="answer-li" data-answer="a">
+                    <input type="radio" name="answer" id="a" class="answer" />
+                    <label for="a" id="a_text">A</label>
+                </li>
+
+                <li class="answer-li" data-answer="b">
+                    <input type="radio" name="answer" id="b" class="answer" />
+                    <label for="b" id="b_text">B</label>
+                </li>
+
+                <li class="answer-li" data-answer="c">
+                    <input type="radio" name="answer" id="c" class="answer" />
+                    <label for="c" id="c_text">C</label>
+                </li>
+
+                <li class="answer-li" data-answer="d">
+                    <input type="radio" name="answer" id="d" class="answer" />
+                    <label for="d" id="d_text">D</label>
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-footer">
+            <div class="quiz-details"></div>
+            <button type="button" id="btn">Następne pytanie</button>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2023 Dawid Mularczyk — WI AGH</p>
+</footer>
+</body>
+</html>
